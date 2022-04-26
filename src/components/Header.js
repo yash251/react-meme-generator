@@ -1,9 +1,14 @@
 function Header() {
-    return (
-      <div>
-        <h1>Meme Generator</h1>
-      </div>
-    );
-  }
+  return (
+    <header className="header">
+        <img 
+            src="../src/images/troll-face.png" alt="troll-face" 
+            className="header--image"
+        />
+        <h2 className="header--title">Meme Generator</h2>
+        <h4 className="header--project">React Project</h4>
+    </header>
+  );
+}
   
-  export default Header;
+export default Header;
