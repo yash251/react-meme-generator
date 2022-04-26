@@ -1,9 +1,10 @@
-import './App.css';
+import './style.css';
+import Header from "./components/Header"
 
 function App() {
   return (
     <div>
-      <h1>Meme Generator</h1>
+      <Header />
     </div>
   );
 }
