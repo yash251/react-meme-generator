@@ -1,8 +1,10 @@
+import img from "../images/troll-face.png"
+
 function Header() {
   return (
     <header className="header">
         <img 
-            src="../images/troll-face.png" alt="troll-face" 
+            src={img} alt="troll-face" 
             className="header--image"
         />
         <h2 className="header--title">Meme Generator</h2>
