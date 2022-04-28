@@ -1,4 +1,7 @@
 function Meme() {
+    // const result = React.useState("Yes")
+    // console.log(result)
+    // output = ["Yes", ƒ()]
     return (
         <main>
             <form className="form">
