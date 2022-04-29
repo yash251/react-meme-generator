@@ -6,9 +6,10 @@ function Meme() {
     const [memeImage, setMemeImage] = useState("")
 
     function getMemeImage() {
-        const memesArray = memesData.data.memes;
-        const randomNumber = Math.floor(Math.random() * memesArray.length);
-        console.log(randomNumber)
+        const memesArray = memesData.data.memes
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        setMemeImage(memesArray[randomNumber].url)
+        
     }
     // const result = React.useState("Yes")
     // console.log(result)
@@ -28,7 +29,7 @@ function Meme() {
 
     return (
         <main>
-            <form className="form">
+            <div className="form">
                 <input 
                     type="text"
                     placeholder="Top text"
@@ -45,7 +46,8 @@ function Meme() {
                 >
                     Get a new meme image 🖼
                 </button>
-            </form>
+            </div>
+            <img src={memeImage} />
         </main>
     );
   }
