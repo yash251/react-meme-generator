@@ -1,4 +1,12 @@
+import memesData from "../memesData";
+
 function Meme() {
+
+    function getMemeImage() {
+        const memesArray = memesData.data.memes;
+        const randomNumber = Math.floor(Math.random() * memesArray.length);
+        console.log(randomNumber)
+    }
     // const result = React.useState("Yes")
     // console.log(result)
     // output = ["Yes", ƒ()]
@@ -30,6 +38,7 @@ function Meme() {
                 />
                 <button 
                     className="form--button"
+                    onClick={getMemeImage}
                 >
                     Get a new meme image 🖼
                 </button>
