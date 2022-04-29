@@ -1,6 +1,9 @@
+import { useState } from "react";
 import memesData from "../memesData";
 
 function Meme() {
+
+    const [memeImage, setMemeImage] = useState("")
 
     function getMemeImage() {
         const memesArray = memesData.data.memes;
